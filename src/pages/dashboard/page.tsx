@@ -603,9 +603,9 @@ const WordStakeDashboard: React.FC = () => {
                 </button>
               </div>
               
-              {/* Wallet Balance (Header) */}
+              {/* coins Balance (Header) */}
               <div className="hidden sm:flex items-center space-x-2 bg-gray-700/50 px-3 py-2 rounded-lg">
-                <Wallet className="w-4 h-4 text-purple-400" />
+                <Coins className="w-4 h-4 text-sm text-yellow-300" />
                 <span className="font-semibold">{currentUser?.coins}</span>
               </div>
               
