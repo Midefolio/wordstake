@@ -1,5 +1,5 @@
-import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
-import { MutableRefObject } from "react";
+import axios, { type AxiosRequestConfig, type AxiosResponse } from "axios";
+import type { MutableRefObject } from "react";
 import { notifyError } from "../utils/useutils";
 import qs from "qs";
 
@@ -14,8 +14,8 @@ type AbortControllerRef = MutableRefObject<AbortController | null>;
 type ContentType = "json" | "urlencoded" | "multipart";
 
  const logout =()=> {
-  localStorage.removeItem('ok');
-  localStorage.removeItem('ok_admin_token');
+  localStorage.removeItem('ws_refresh_token');
+  localStorage.removeItem('pubkey');
   window.location.reload()
  }
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Users, Trophy, Zap, Clock, Coins, Star, Target, Brain, Sparkles, Menu, X } from 'lucide-react';
 import ConnectWallet from '../../components/wallet_connect/connection';
+import { clickHandler } from '../../utils/useutils';
 
 interface MousePosition {
   x: number;
@@ -27,6 +28,7 @@ const WordStakeLanding: React.FC = () => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
+  
     
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -289,7 +291,7 @@ const WordStakeLanding: React.FC = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-            <button className="w-full sm:w-auto group bg-purple-600 hover:bg-purple-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
+            <button onClick={()=> {clickHandler('connect_wallecr')}} className="w-full sm:w-auto group bg-purple-600 hover:bg-purple-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
               <Play className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-pulse" />
               <span>Play Solo</span>
             </button>

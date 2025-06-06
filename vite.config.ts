@@ -15,7 +15,7 @@ export default defineConfig({
     }),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      includeAssets: ['/logo.svg'],
       manifest: {
         name: 'safeDeal',
         short_name: 'VitePWA',
@@ -23,19 +23,19 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'solana.png',
+            src: '/logo.svg',
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/svg'
           },
           {
-            src: 'solana.png',
+            src: '/logo.svg',
             sizes: '512x512',
-            type: 'image/png'
+            type: 'image/svg'
           },
           {
-            src: 'solana.png',
+            src: '/logo.svg',
             sizes: '512x512',
-            type: 'image/png',
+            type: 'image/svg',
             purpose: 'any maskable'
           }
         ]

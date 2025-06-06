@@ -9,7 +9,7 @@ import {
 import 'react-toastify/dist/ReactToastify.css';
 import NotFound from "./pages/notfound/404";
 import { ToastContainer } from "react-toastify";
-import WordGameApp from "./pages/dashboard/game_area";
+import WordGameApp from "./pages/gameArea/game_area";
 import WordStakeLanding from "./pages/home/page";
 import WordStakeDashboard from "./pages/dashboard/page";
 
@@ -20,8 +20,8 @@ const App = () => {
     createRoutesFromElements(
       <>
         <Route path="/" >
-           <Route path="/wordstake" element={ token ? <WordStakeDashboard/> : <Navigate to="/wordstake" />} />
-           <Route path="/wordstake/play" element={token ? <WordGameApp/> : <Navigate to="/wordstake" /> } />
+           <Route path="/wordstake" element={ token ? <WordStakeDashboard/> : <Navigate to="/" />} />
+           <Route path="/wordstake/play" element={ token ? <WordGameApp/> : <Navigate to="/" /> } />
            <Route path="/" element={!token ? <WordStakeLanding/>:<Navigate to="/wordstake" /> } />
            <Route path="*" element={<NotFound/>} />
         </Route>

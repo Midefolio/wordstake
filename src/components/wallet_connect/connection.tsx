@@ -161,6 +161,7 @@ function WalletButton({from}:any) {
   return (
     <>
       <button
+        id='connect_wallecr'
         onClick={handleClick}
         className="hidden lg:flex gap-2  px-4 xl:px-6 py-2 xl:py-3 rounded-full transition-all transform hover:scale-105 text-sm xl:text-base items-center"
       >
