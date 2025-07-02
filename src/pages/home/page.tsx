@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Users, Trophy, Zap, Clock, Coins, Star, Target, Brain, Sparkles, Menu, X } from 'lucide-react';
 import ConnectWallet from '../../components/wallet_connect/connection';
+import { WalletButton, BalanceDisplay, WalletInfo, TransferGor, LogoutModal } from '../../components/wallet_components';
+
 import { clickHandler } from '../../utils/useutils';
 
 interface MousePosition {
@@ -211,7 +213,7 @@ const WordStakeLanding: React.FC = () => {
         </button>
         
         {/* Connect Wallet Button */}
-         <ConnectWallet/>
+         <WalletButton/>
       </nav>
 
       {/* Mobile Menu */}
@@ -263,6 +265,7 @@ const WordStakeLanding: React.FC = () => {
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 text-gray-300 max-w-4xl mx-auto leading-relaxed px-4">
             The ultimate word game where intelligence meets blockchain. Compete, stake, and earn rewards while expanding your vocabulary.
           </p>
+          <WalletInfo/>
           
           {/* Sample Game Demo */}
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 mb-8 sm:mb-12 max-w-4xl mx-auto border border-gray-700">

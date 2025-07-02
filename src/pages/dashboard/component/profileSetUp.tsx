@@ -130,7 +130,7 @@ const ProfileSetupModal: React.FC<any> = ({ currentUser }) => {
   if (currentUser?.username) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center md:p-4">
       <div className="bg-gray-800 rounded-2xl shadow-2xl w-full max-w-md transform transition-all duration-300 scale-100 animate-fadeInScale">
         {/* Header */}
         <div className="relative p-6 border-b border-gray-700">

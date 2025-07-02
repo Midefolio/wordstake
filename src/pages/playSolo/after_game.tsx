@@ -295,6 +295,7 @@ const PostGame = ({ validationResults, startGame, currentUser, clearCurrentGameS
     const handleStartGame = async () => {
         setShowSuccessPopup(false);
         setShowWoefulModal(false);
+        await clearCurrentGameState();
         await initializeGame();
     };
 
@@ -544,7 +545,7 @@ const PostGame = ({ validationResults, startGame, currentUser, clearCurrentGameS
                             >
                                 <button
                                     onClick={handleStartGame}
-                                    className="flex items-center justify-center space-x-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-6 py-3 rounded-xl font-bold text-white transition-all duration-300 transform hover:scale-105"
+                                    className="flex items-center z-30 justify-center space-x-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-6 py-3 rounded-xl font-bold text-white transition-all duration-300 transform hover:scale-105"
                                 >
                                     <Play className="w-5 h-5" />
                                     <span>Try Again</span>

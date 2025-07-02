@@ -73,7 +73,7 @@ const UserContextInner = ({ children }: { children: ReactNode }) => {
         getGamer(pubkey),
       ])
     }
-  }, [token])
+  }, [token, pubkey])
 
   return (
     <UserContext.Provider
