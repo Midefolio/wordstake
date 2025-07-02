@@ -104,7 +104,7 @@ export function WalletButton({ variant = 'default' }: { variant?: WalletButtonVa
 
 
 
-  const baseClasses = "flex items-center gap-2 px-4 py-2 rounded-full transition-all transform hover:scale-105";
+  const baseClasses = "flex text-xs md:text-sm items-center gap-2 px-4 py-2 rounded-full transition-all transform hover:scale-105";
   const variantClasses = {
     default: "bg-purple-600 hover:bg-purple-700 text-white",
     outline: "border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white",
