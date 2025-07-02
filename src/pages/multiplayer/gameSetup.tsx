@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 
 // Move socket initialization inside component or use lazy initialization
 // const socket = io("https://adesina-revemp-be.onrender.com");
-const socket = io("http://localhost:4000");
+const socket = io("https://wordstake-backend.onrender.com");
 
 const GameSetup = ({ setGameMode, currentUser }: any) => {
   // Initialize socket reference

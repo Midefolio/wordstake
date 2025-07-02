@@ -28,7 +28,7 @@ import useUserAuthContext from '../../hook/userUserAuthContext';
 import { TransferGor } from '../../components/wallet_components';
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:4000");
+const socket = io("https://wordstake-backend.onrender.com");
 
 const GameJoin = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
