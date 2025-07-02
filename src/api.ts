@@ -1,8 +1,8 @@
-const baseUrl = "http://localhost:4000/api/v1";
-// const baseUrl = "https://wordstake-backend.onrender.com/api/v1";
+// const baseUrl = "http://localhost:4000/api/v1";
+const baseUrl = "https://wordstake-backend.onrender.com/api/v1";
 
-const appUrl = "http://localhost:3000";
-// const appUrl = "https://game.wordstake.xyz";
+// const appUrl = "http://localhost:3000";
+const appUrl = "https://playwordstake.online";
 
 const initializeApi = `${baseUrl}/game/initialize`;
 const updateGamerApi = `${baseUrl}/game/updateGamer`;
