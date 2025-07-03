@@ -74,7 +74,7 @@ const GameResults = () => {
     }
 
     useEffect(() => {
-        // fetchGameDetails();
+        fetchGameDetails();
     }, [gameCode]);
 
 

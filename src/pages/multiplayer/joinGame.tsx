@@ -325,12 +325,12 @@ const GameJoin = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white flex items-center justify-center p-3 md:p-0" style={{
+    <div className="min-h-screen bg-gray-950 text-white flex items-center justify-center  md:p-0" style={{
       backgroundImage: 'url(/gameBg.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}>
-      {gameDetails && (<div className='w-screen h-screen bg-black/75 -mt-10 md:mt-0 md:pt-5 p-10'>
+      {gameDetails && (<div className='w-screen h-screen bg-black/75 -mt-0 p-2 md:mt-0 md:pt-5'>
         {/* Music Controls */}
         <div className="fixed top-4 right-4 z-50 flex flex-col gap-2">
           <motion.button
@@ -740,7 +740,7 @@ const GameJoin = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={startGame}
-                        className="px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 rounded-xl font-semibold text-lg flex items-center gap-2 transition-all"
+                        className="px-8 py-4 justify-center bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 rounded-xl font-semibold text-lg flex items-center gap-2 transition-all"
                       >
                         <Play className="w-5 h-5" />
                         Start Game
@@ -762,7 +762,7 @@ const GameJoin = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={()=> {  Navigate(`/multiplayer/play/${gameCode}`);}}
-                        className="px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 rounded-xl font-semibold text-lg flex items-center gap-2 transition-all"
+                        className="px-8 py-4 justify-center bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 rounded-xl font-semibold text-lg flex items-center gap-2 transition-all"
                       >
                         <Play className="w-5 h-5" />
                         Start Game

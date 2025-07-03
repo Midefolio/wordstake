@@ -292,14 +292,14 @@ const GameSetup = ({ setGameMode, currentUser }: any) => {
     }
 
   return (
-    <div className="bg-gray-950 text-white fle items-cener jstify-center p3 md:p-0" style={{
+    <div className="bg-gray-950 text-white fle items-cener jstify-center md:p-0" style={{
       backgroundImage: 'url(/gameBg.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}>
 
 
-      <div className='w-full h-full bg-black/75 -mt-10 md:mt-0 md:pt-5 p-10'>
+      <div className='w-full h-full bg-black/75 md:mt-0 md:pt-5 p-5'>
         <div className="fixed top-4 right-4 z-50 flex flex-col gap-2">
           <motion.button
             whileHover={{ scale: 1.1 }}
@@ -669,13 +669,6 @@ const GameSetup = ({ setGameMode, currentUser }: any) => {
 
                 </div>
                 <div className="flex justify-between">
-                  <motion.button
-                    whileTap={{ scale: 0.95 }}
-                    onClick={()=>{updatePayment()}}
-                    className="flex px-6 bg-ray-700 hover:bg-gray-600 text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-colors"
-                  >
-                    I have made tranfer
-                  </motion.button>
                   <TransferGor onTransferSuccess={updatePayment} initialAmount={gameSettings?.stake || gameSettings?.reward} address={gameSettings?.address?.pubKey} />
                 </div>
                 <div className='pt-6'><button className='p-2 bg-red-500' onClick={deleteGame}>Cancle Game</button></div>

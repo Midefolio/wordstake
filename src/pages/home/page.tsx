@@ -345,9 +345,9 @@ const WordStakeLanding: React.FC = () => {
               <TrophyIcon className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 text-yellow-400" />
             </div>
             <h4 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6">Leaderboard Champion</h4>
-            <p className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-green-400 mb-4 sm:mb-6">$5 USD</p>
+            <p className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-green-400 mb-4 sm:mb-6">1 GOR</p>
             <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              The highest scoring player each week wins $5 directly to their wallet
+              The highest scoring player each week wins 1 GOR directly to their wallet
             </p>
           </div>
         </div>
@@ -389,13 +389,13 @@ const WordStakeLanding: React.FC = () => {
                   {[1, 2, 3].map((player: number) => (
                     <div key={player} className="flex justify-between items-center py-3 px-4 bg-gray-700/50 rounded-lg">
                       <span className="text-sm sm:text-base">Player {player}</span>
-                      <span className="text-green-400 font-semibold text-sm sm:text-base">0.1 SOL</span>
+                      <span className="text-green-400 font-semibold text-sm sm:text-base">0.1 $Gor</span>
                     </div>
                   ))}
                   <div className="border-t border-gray-600 pt-4 mt-4 sm:mt-6">
                     <div className="flex justify-between items-center text-base sm:text-lg font-bold">
                       <span>Winner Takes:</span>
-                      <span className="text-yellow-400">0.3 SOL</span>
+                      <span className="text-yellow-400">0.3 $Gor</span>
                     </div>
                   </div>
                 </div>
@@ -435,7 +435,7 @@ const WordStakeLanding: React.FC = () => {
             <span className="text-lg sm:text-xl font-bold">WordStake</span>
           </div>
           <p className="text-sm sm:text-base text-gray-400 text-center sm:text-right">
-            © 2025 WordStake. Built on Solana blockchain.
+            © 2025 WordStake. Built on $GOR Testnet.
           </p>
         </div>
       </footer>
