@@ -188,8 +188,8 @@ const WordStakeLanding: React.FC = () => {
       {/* Navigation */}
       <nav className="relative z-50 flex justify-between items-center p-4 sm:p-6 lg:p-8">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-600 rounded-xl flex items-center justify-center">
-            <WordIcon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+          <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+            <img src="/stake.jpg" className="w-full h-full rounded-full text-white object-cover" />
           </div>
           <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">
             WordStake
@@ -205,12 +205,12 @@ const WordStakeLanding: React.FC = () => {
         </div>
         
         {/* Mobile Menu Button */}
-        <button 
+        {/* <button 
           className="lg:hidden p-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        </button> */}
         
         {/* Connect Wallet Button */}
          <WalletButton/>
@@ -293,11 +293,11 @@ const WordStakeLanding: React.FC = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-            <button onClick={()=> {clickHandler('connect_wallecr')}} className="w-full sm:w-auto group bg-purple-600 hover:bg-purple-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
+            <button onClick={()=> {alert("Please connect Backpack wallet")}} className="w-full sm:w-auto group bg-purple-600 hover:bg-purple-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
               <Play className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-pulse" />
               <span>Play Solo</span>
             </button>
-            <button className="w-full sm:w-auto group bg-pink-600 hover:bg-pink-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
+            <button onClick={()=> {alert("Please connect Backpack wallet")}}  className="w-full sm:w-auto group bg-pink-600 hover:bg-pink-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
               <Users className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
               <span>Multiplayer Battle</span>
             </button>
